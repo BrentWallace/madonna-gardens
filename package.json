@@ -5,7 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon src/app.js -e hbs,js,css"
+    "dev": "nodemon src/app.js -e hbs,js,css",
+    "start": "pm2 start src/app.js",
+    "list": "pm2 list",
+    "reload": "pm2 reload all",
+    "restart": "pm2 restart all",
+    "stop": "pm2 stop all",
+    "delete": "pm2 delete all",
+    "monitor": "pm2 monit"
   },
   "author": "",
   "license": "ISC",
