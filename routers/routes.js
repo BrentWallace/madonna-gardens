@@ -74,7 +74,17 @@ router.post('/contact', [
     return res.status(400).send();
   }
   const toEmail = process.env.EMAIL_RECIPIENT.split(',');
-  const { fromEmail, firstName, lastName, phone, referralSource, inquiringFor, brochure, tour, comments } = req.body;
+  const {
+    fromEmail,
+    firstName,
+    lastName,
+    phone,
+    referralSource,
+    inquiringFor,
+    brochure,
+    tour,
+    comments,
+  } = req.body;
   const msg = {
     to: toEmail,
     from: fromEmail,
