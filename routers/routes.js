@@ -52,6 +52,12 @@ router.get('/covid-19', (req, res) => {
   });
 });
 
+router.get('/videos', (req,res) => {
+  res.render('videos.hbs', {
+    title: 'Videos',
+  });
+});
+
 router.get('/sitemap.xml', (req, res) => {
   const file = `${__dirname}/../public/sitemaps/sitemap.xml`;
   res.download(file);
