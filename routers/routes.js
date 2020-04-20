@@ -52,7 +52,7 @@ router.get('/covid-19', (req, res) => {
   });
 });
 
-router.get('/videos', (req,res) => {
+router.get('/videos', (req, res) => {
   res.render('videos.hbs', {
     title: 'Videos',
   });
