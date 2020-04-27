@@ -18,14 +18,11 @@ router.get('/', (req, res) => {
         "addressLocality": "Salinas",
         "addressRegion": "CA",
         "postalCode": "93901",
-        // eslint-disable-next-line comma-dangle
         "streetAddress": "1335 Byron Drive"
       },
       "name": "Madonna Gardens Assisted Living & Memory Care",
       "url": "https://madonnagardens.com",
-      // eslint-disable-next-line comma-dangle
       "telephone": "+18317580931",
-    // eslint-disable-next-line comma-dangle
       "sameAs": ["https://www.facebook.com/madonnagardens"]
     }`
   });
