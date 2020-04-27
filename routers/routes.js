@@ -7,6 +7,27 @@ const router = new express.Router();
 router.get('/', (req, res) => {
   res.render('index.hbs', {
     title: 'Madonna Gardens Memory Care & Assisted Living',
+    description: 'Welcome to Madonna Gardens, an assisted living and memory care senior living community in Salinas, California. Madonna Gardens offers an engaging and varied lifestyle that empowers individuals to enjoy creative pursuits, refine skills, revisit old hobbies, and discover new passions in a family environment.',
+    jsonld: `{
+      "@context": "https://schema.org",
+      "@type": "localBusiness",
+      "image": "https://madonnagardens.com/img/hero-slide-1.jpg",
+      "logo": "https://madonnagardens.com/img/madonna-gardens-logo.png",
+      "address": {
+        "@type": "postalAddress",
+        "addressLocality": "Salinas",
+        "addressRegion": "CA",
+        "postalCode": "93901",
+        // eslint-disable-next-line comma-dangle
+        "streetAddress": "1335 Byron Drive"
+      },
+      "name": "Madonna Gardens Assisted Living & Memory Care",
+      "url": "https://madonnagardens.com",
+      // eslint-disable-next-line comma-dangle
+      "telephone": "+18317580931",
+    // eslint-disable-next-line comma-dangle
+      "sameAs": ["https://www.facebook.com/madonnagardens"]
+    }`
   });
 });
 
@@ -61,6 +82,11 @@ router.get('/videos', (req, res) => {
 router.get('/sitemap.xml', (req, res) => {
   const file = `${__dirname}/../public/sitemaps/sitemap.xml`;
   res.download(file);
+});
+
+router.get('/robots.txt', (req, res) => {
+  res.type('text/plain');
+  res.send('User-agent: *\nAllow: /*\nSitemap: https://madonnagardens.com/sitemap.xml');
 });
 
 router.get('/contact', (req, res) => {

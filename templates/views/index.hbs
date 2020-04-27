@@ -1,13 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   {{> analytics}}
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="{{ description }}">
+  <meta property="og:url" content="https://madonnagardens.com">
+  <meta property="og:title" content="Madonna Gardens Assisted Living & Memory Care">
+  <meta property="og:description" content="{{ description }}">
+  <meta property="og:image" content="https://madonnagardens.com/img/hero-slide-1.jpg">
+  <meta property="og:type" content="website">
   <title>{{title}}</title>
   {{> favicon}}
   {{> css}}
+  <script type="application/ld+json">
+    {{ jsonld }}
+  </script>
 </head>
 
 <body>
@@ -72,8 +81,8 @@
       </div>
       <div class="row">
         <div class="col d-flex justify-content-center">
-          <a href="https://www.pageturnpro.com/NORCAL-Community-Newspaper-Group/94281-Readers-Choice-2019/sdefault.html?bookurl=94281#page/10" target="_blank"><img style="height:300px;" src="img/readers-choice-logo-2019.jpg" /></a>
-          <img style="height:300px;" src="img/Salinas-Valley-Weekly-Award-2018-modified.jpg" />
+          <a href="https://www.pageturnpro.com/NORCAL-Community-Newspaper-Group/94281-Readers-Choice-2019/sdefault.html?bookurl=94281#page/10" target="_blank"><img style="height:300px;" src="img/readers-choice-logo-2019.jpg" alt="Readers Choice Logo"/></a>
+          <img style="height:300px;" src="img/Salinas-Valley-Weekly-Award-2018-modified.jpg" alt="Salinas Valley Weekly Award"/>
         </div>
       </div>
     </div>
