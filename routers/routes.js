@@ -37,6 +37,26 @@ router.get('/about', (req, res) => {
 router.get('/photos', (req, res) => {
   res.render('photos.hbs', {
     title: 'Photo Gallery',
+    albums: [
+      {
+        title: '',
+        target: 'community-photos',
+        photos: [
+          { src: '/img/gallery/MadonnaGardens-8822-HDR-Edit-Edit-Edit.jpg', alt: '' },
+          { src: '/img/gallery/CIA_8763.jpg', alt: '' },
+          { src: '/img/gallery/MadonnaGardens-1-9.jpg', alt: '' },
+          { src: '/img/gallery/MadonnaGardens-1-23.jpg', alt: '' },
+          { src: '/img/gallery/MadonnaGardens-1-19.jpg', alt: '' },
+          { src: '/img/gallery/DSC_2889.jpg', alt: '' },
+          { src: '/img/gallery/CIA_8549.jpg', alt: '' },
+          { src: '/img/gallery/CIA_8510.jpg', alt: '' },
+          { src: '/img/gallery/MadonnaGardens-1-15.jpg', alt: '' },
+          { src: '/img/gallery/MadonnaGardens-1-4.jpg', alt: '' },
+          { src: '/img/gallery/MadonnaGardens-8811-HDR-Edit.jpg', alt: '' },
+          { src: '/img/gallery/MadonnaGardens-1.jpg', alt: '' },
+        ],
+      },
+    ],
   });
 });
 
