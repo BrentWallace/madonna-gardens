@@ -6,7 +6,7 @@ const router = new express.Router();
 
 router.get('/', (req, res) => {
   res.render('index.hbs', {
-    title: 'Madonna Gardens Memory Care & Assisted Living',
+    title: 'Madonna Gardens Assisted Living & Memory Care',
     description: 'Welcome to Madonna Gardens, an assisted living and memory care senior living community in Salinas, California. Madonna Gardens offers an engaging and varied lifestyle that empowers individuals to enjoy creative pursuits, refine skills, revisit old hobbies, and discover new passions in a family environment.',
     jsonld: `{
       "@context": "https://schema.org",
