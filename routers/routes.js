@@ -24,7 +24,7 @@ router.get('/', (req, res) => {
       "url": "https://madonnagardens.com",
       "telephone": "+18317580931",
       "sameAs": ["https://www.facebook.com/madonnagardens"]
-    }`
+    }`,
   });
 });
 
@@ -41,6 +41,7 @@ router.get('/photos', (req, res) => {
       {
         title: '',
         target: 'community-photos',
+        description: '',
         photos: [
           { src: '/img/gallery/MadonnaGardens-8822-HDR-Edit-Edit-Edit.jpg', alt: '' },
           { src: '/img/gallery/CIA_8763.jpg', alt: '' },
@@ -54,6 +55,59 @@ router.get('/photos', (req, res) => {
           { src: '/img/gallery/MadonnaGardens-1-4.jpg', alt: '' },
           { src: '/img/gallery/MadonnaGardens-8811-HDR-Edit.jpg', alt: '' },
           { src: '/img/gallery/MadonnaGardens-1.jpg', alt: '' },
+        ],
+      },
+    ],
+  });
+});
+
+router.get('/photos/dining', (req, res) => {
+  res.render('photos.hbs', {
+    title: 'Dining Photos',
+    target: '',
+    description: '',
+    albums: [
+      {
+        title: 'Grand Opening - June 2019',
+        target: 'garnd-opening-dining',
+        photos: [
+          { src: '/img/dining/grand-opening/grand-opening-1.jpg', alt: '' },
+          { src: '/img/dining/grand-opening/grand-opening-2.jpg', alt: '' },
+          { src: '/img/dining/grand-opening/grand-opening-3.jpg', alt: '' },
+          { src: '/img/dining/grand-opening/grand-opening-4.jpg', alt: '' },
+          { src: '/img/dining/grand-opening/grand-opening-5.jpg', alt: '' },
+          { src: '/img/dining/grand-opening/grand-opening-6.jpg', alt: '' },
+        ],
+      },
+    ],
+  });
+});
+
+router.get('/photos/activities', (req, res) => {
+  res.render('photos.hbs', {
+    title: 'Activities Photos',
+    target: '',
+    description: '',
+    albums: [
+      {
+        title: 'Grand Opening - June 2019',
+        target: 'garnd-opening-dining',
+        photos: [
+          { src: '/img/activities/grand-opening/grand-opening-1.jpg', alt: '' },
+          { src: '/img/activities/grand-opening/grand-opening-2.jpg', alt: '' },
+          { src: '/img/activities/grand-opening/grand-opening-3.jpg', alt: '' },
+          { src: '/img/activities/grand-opening/grand-opening-4.jpg', alt: '' },
+          { src: '/img/activities/grand-opening/grand-opening-5.jpg', alt: '' },
+          { src: '/img/activities/grand-opening/grand-opening-6.jpg', alt: '' },
+          { src: '/img/activities/grand-opening/grand-opening-7.jpg', alt: '' },
+          { src: '/img/activities/grand-opening/grand-opening-8.jpg', alt: '' },
+          { src: '/img/activities/grand-opening/grand-opening-9.jpg', alt: '' },
+          { src: '/img/activities/grand-opening/grand-opening-10.jpg', alt: '' },
+          { src: '/img/activities/grand-opening/grand-opening-11.jpg', alt: '' },
+          { src: '/img/activities/grand-opening/grand-opening-12.jpg', alt: '' },
+          { src: '/img/activities/grand-opening/grand-opening-13.jpg', alt: '' },
+          { src: '/img/activities/grand-opening/grand-opening-14.jpg', alt: '' },
+          { src: '/img/activities/grand-opening/grand-opening-15.jpg', alt: '' },
         ],
       },
     ],
@@ -87,6 +141,12 @@ router.get('/activities', (req, res) => {
 router.get('/covid-19', (req, res) => {
   res.render('covid.hbs', {
     title: 'COVID-19',
+  });
+});
+
+router.get('/testimonials', (req, res) => {
+  res.render('testimonials.hbs', {
+    title: 'Family Testimonials',
   });
 });
 
