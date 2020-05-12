@@ -68,8 +68,20 @@ router.get('/photos/dining', (req, res) => {
     description: '',
     albums: [
       {
+        title: 'Everyday Dining at Madonna Gardens',
+        target: 'everyday-dining',
+        photos: [
+          { src: '/img/dining/madonna-dining/dining-1.jpg', alt: '' },
+          { src: '/img/dining/madonna-dining/dining-2.jpg', alt: '' },
+          { src: '/img/dining/madonna-dining/dining-3.jpg', alt: '' },
+          { src: '/img/dining/madonna-dining/dining-4.jpg', alt: '' },
+          { src: '/img/dining/madonna-dining/dining-5.jpg', alt: '' },
+          { src: '/img/dining/madonna-dining/dining-6.jpg', alt: '' },
+        ],
+      },
+      {
         title: 'Grand Opening - June 2019',
-        target: 'garnd-opening-dining',
+        target: 'grand-opening-dining',
         photos: [
           { src: '/img/dining/grand-opening/grand-opening-1.jpg', alt: '' },
           { src: '/img/dining/grand-opening/grand-opening-2.jpg', alt: '' },
@@ -90,8 +102,43 @@ router.get('/photos/activities', (req, res) => {
     description: '',
     albums: [
       {
+        title: 'Activities in the Madonna Gardens Community',
+        target: 'activities-in-the-community',
+        photos: [
+          { src: '/img/activities/madonna-activities/MG Paint community.jpg', alt: '' },
+          { src: '/img/activities/madonna-activities/MGCommunity Activities.jpg', alt: '' },
+          { src: '/img/activities/madonna-activities/MGCommunityActivities1.jpg', alt: '' },
+          { src: '/img/activities/madonna-activities/MGCommunityActivities2.jpg', alt: '' },
+        ],
+      },
+      {
+        title: 'Pet Visits',
+        target: 'pet-visits',
+        description: 'Monthly Pet Visits - Snuggling with Furry Friends',
+        photos: [
+          { src: '/img/activities/pet-visits/pet-visits-1.jpg', alt: '' },
+          { src: '/img/activities/pet-visits/pet-visits-2.jpg', alt: '' },
+          { src: '/img/activities/pet-visits/pet-visits-3.jpg', alt: '' },
+          { src: '/img/activities/pet-visits/pet-visits-4.jpg', alt: '' },
+        ],
+      },
+      {
+        title: 'Holidays',
+        target: 'holidays',
+        photos: [
+          { src: '/img/activities/holidays/Halloween holiday celebrations.jpg', alt: '' },
+          { src: '/img/activities/holidays/Holiday celebrations vet.jpg', alt: '' },
+          { src: '/img/activities/holidays/Holiday celebrations.jpg', alt: '' },
+          { src: '/img/activities/holidays/Holidayactivities.jpg', alt: '' },
+          { src: '/img/activities/holidays/Holidaycelebrations.jpg', alt: '' },
+          { src: '/img/activities/holidays/MGCelebrationsHoliday.jpg', alt: '' },
+          { src: '/img/activities/holidays/MGHolidayCelebration.jpg', alt: '' },
+          { src: '/img/activities/holidays/MGJuly.jpg', alt: '' },
+        ],
+      },
+      {
         title: 'Grand Opening - June 2019',
-        target: 'garnd-opening-dining',
+        target: 'grand-opening-dining',
         photos: [
           { src: '/img/activities/grand-opening/grand-opening-1.jpg', alt: '' },
           { src: '/img/activities/grand-opening/grand-opening-2.jpg', alt: '' },
