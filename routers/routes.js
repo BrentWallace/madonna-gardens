@@ -65,7 +65,7 @@ router.get('/photos/dining', (req, res) => {
   res.render('photos.hbs', {
     title: 'Dining Photos',
     target: '',
-    description: '',
+    description: 'Our culinary team at Madonna Gardens Assisted Living & Memory Care is committed to providing a nurturing and satisfying dining experience for our residents. Always having our residents well-being and care in mind, our meals are prepared with fresh and flavorful ingredients with dining options and choices.',
     albums: [
       {
         title: 'Everyday Dining at Madonna Gardens',
@@ -123,7 +123,7 @@ router.get('/photos/activities', (req, res) => {
         ],
       },
       {
-        title: 'Holidays',
+        title: 'Holiday Celebrations',
         target: 'holidays',
         photos: [
           { src: '/img/activities/holidays/Halloween holiday celebrations.jpg', alt: '' },
