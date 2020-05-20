@@ -109,6 +109,7 @@ router.get('/photos/activities', (req, res) => {
           { src: '/img/activities/madonna-activities/MGCommunity Activities.jpg', alt: '' },
           { src: '/img/activities/madonna-activities/MGCommunityActivities1.jpg', alt: '' },
           { src: '/img/activities/madonna-activities/MGCommunityActivities2.jpg', alt: '' },
+          { src: '/img/activities/madonna-activities/MG-ice-cream.jpg', alt: '' },
         ],
       },
       {
@@ -120,6 +121,9 @@ router.get('/photos/activities', (req, res) => {
           { src: '/img/activities/pet-visits/pet-visits-2.jpg', alt: '' },
           { src: '/img/activities/pet-visits/pet-visits-3.jpg', alt: '' },
           { src: '/img/activities/pet-visits/pet-visits-4.jpg', alt: '' },
+          { src: '/img/activities/pet-visits/pet-visits-5.jpg', alt: '' },
+          { src: '/img/activities/pet-visits/pet-visits-6.jpg', alt: '' },
+          { src: '/img/activities/pet-visits/pet-visits-7.jpg', alt: '' },
         ],
       },
       {
