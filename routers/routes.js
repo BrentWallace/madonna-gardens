@@ -102,6 +102,17 @@ router.get('/photos/activities', (req, res) => {
     description: '',
     albums: [
       {
+        title: 'Residents With Their Families',
+        target: 'residents-with-their-families',
+        description: 'We are helping families connect with their loved ones during these challenging times.',
+        photos: [
+          { src: '/img/activities/madonna-activities/MGLetter1.jpg', alt: '' },
+          { src: '/img/activities/madonna-activities/MGLetter2.jpg', alt: '' },
+          { src: '/img/activities/madonna-activities/MG90bday3.jpg', alt: '' },
+          { src: '/img/activities/madonna-activities/MG101BD4.jpg', alt: '' },
+        ],
+      },
+      {
         title: 'Activities in the Madonna Gardens Community',
         target: 'activities-in-the-community',
         photos: [
