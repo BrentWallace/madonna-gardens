@@ -138,9 +138,15 @@ router.get('/photos/activities', (req, res) => {
         ],
       },
       {
-        title: 'Holiday Celebrations',
+        title: 'Birthday and Holiday Celebrations',
         target: 'holidays',
         photos: [
+          { src: '/img/activities/holidays/MG90bday1.jpg', alt: '' },
+          { src: '/img/activities/holidays/MG90bday2.jpg', alt: '' },
+          { src: '/img/activities/holidays/MG101BD1.jpg', alt: '' },
+          { src: '/img/activities/holidays/MG101BD3.jpg', alt: '' },
+          { src: '/img/activities/holidays/MGBirthdayOutdoor2.jpg', alt: '' },
+          { src: '/img/activities/holidays/MGcard1W.jpg', alt: '' },  
           { src: '/img/activities/holidays/Halloween holiday celebrations.jpg', alt: '' },
           { src: '/img/activities/holidays/Holiday celebrations vet.jpg', alt: '' },
           { src: '/img/activities/holidays/Holiday celebrations.jpg', alt: '' },
