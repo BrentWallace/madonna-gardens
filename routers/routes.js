@@ -102,7 +102,7 @@ router.get('/photos/activities', (req, res) => {
     description: '',
     albums: [
       {
-        title: 'Residents With Their Families',
+        title: 'Residents Communicating with their Loved Ones',
         target: 'residents-with-their-families',
         description: 'We are helping families connect with their loved ones during these challenging times.',
         photos: [
@@ -121,6 +121,9 @@ router.get('/photos/activities', (req, res) => {
           { src: '/img/activities/madonna-activities/MGCommunityActivities1.jpg', alt: '' },
           { src: '/img/activities/madonna-activities/MGCommunityActivities2.jpg', alt: '' },
           { src: '/img/activities/madonna-activities/MG-ice-cream.jpg', alt: '' },
+          { src: '/img/activities/madonna-activities/MGArtwork8.jpg', alt: '' },
+          { src: '/img/activities/madonna-activities/MGArtwork6.jpg', alt: '' },
+          { src: '/img/activities/madonna-activities/MCArtwork1.jpg', alt: '' },
         ],
       },
       {
